@@ -1,0 +1,11 @@
+{
+  "name": "workgarage3",
+  "version": "0.0.1",
+  "description": "Site showcasing my web development work",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "?git"
+  },
+  "author": "Armand Nerbas"
+}
