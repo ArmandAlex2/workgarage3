@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "?git"
+    "url": "https://github.com/ArmandAlex2/workgarage3.git"
   },
   "author": "Armand Nerbas",
   "devDependencies": {
