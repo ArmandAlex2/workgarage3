@@ -27,15 +27,17 @@ gulp.task('js', function() {
   gulp.src(jsSources)
   .pipe(concat('scripts.js'))
   .pipe(browserify())
-  .pipe(gulp.dest('builds/developent/js'))
+  .pipe(gulp.dest('builds/development/js'))
 });
 
 gulp.task('compass', function() {
   gulp.src(sassSources)
-  .pipe(compass({
-    sass: 'components/sass',
-    images: 'developent/images/'
-  }))
-  .on('error', gutil.log))
-  .pipe(gulp.dest('builds/developent/css'))
+      .pipe(compass({
+        sass: 'components/sass',
+        image: 'builds/development/images/',
+        style: 'expanded'
+      })
+            .on('error', gutil.log))
+        .pipe(gulp.dest('builds/development/css'))
 });
+
