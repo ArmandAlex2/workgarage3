@@ -25,7 +25,7 @@ gulp.task('coffee', function() {
 
 gulp.task('js', function() {
   gulp.src(jsSources)
-  .pipe(concat('scripts.js'))
+  .pipe(concat('script.js'))
   .pipe(browserify())
   .pipe(gulp.dest('builds/development/js'))
 });
@@ -41,5 +41,9 @@ gulp.task('compass', function() {
         .pipe(gulp.dest('builds/development/css'))
 });
 
+gulp.task('watch', function() {
+    gulp.watch(coffeeSources, ['coffee']);
+});
 
-gulp.task('default', ['coffee', 'js', 'compass']);
+
+gulp.task('default', ['coffee', 'js', 'compass' ]);
